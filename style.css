@@ -1,0 +1,170 @@
+@import url("https://fonts.googleapis.com/css?family=Montserrat");
+html {
+  height: 100%;
+  /* -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover; */
+  /* background-size: cover; */
+  background-repeat: no-repeat;
+  background: -webkit-linear-gradient(to right, #1a1a1a 0%, #999999 100%);
+  background: -moz-linear-gradient(to right, #1a1a1a 0%, #999999 100%);
+  background: -ms-linear-gradient(to right, #1a1a1a 0%, #999999 100%);
+  background: -o-linear-gradient(to right, #1a1a1a 0%, #999999 100%);
+  background: linear-gradient(to right, #1a1a1a 0%, #999999 100%);
+}
+
+.card {
+  margin: 24px;
+  padding: 12px;
+  display: inline-block;
+  border-radius: 18px;
+}
+
+.card:hover {
+  box-shadow: 0 0 11px rgba(33, 33, 33, 0.2);
+}
+.card h4 {
+  text-align: center;
+  font-family: "Montserrat", sans-serif;
+}
+#navbar{
+  text-align: center;
+  font-family: "Montserrat" , sans-serif;
+  padding: 0.2em;
+  background-color: rgb(0, 0, 0);
+  -webkit-border-radius: 25px;
+  border-radius: 25px;
+  color: rgb(255, 255, 255);
+  margin-left: 35%;
+  
+}
+
+#lock .iconLock, #setting .iconSetting{
+  margin-left: 10px;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+#lock .iconLock:hover, #setting .iconSetting:hover{
+  color: rgb(10, 10, 131);
+}
+
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 34px;
+  margin-bottom: 10px;
+}
+
+.switch input { 
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 26px;
+  width: 26px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+input:checked + .slider {
+  background-color: #000000;
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 1px #000000;
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(26px);
+  -ms-transform: translateX(26px);
+  transform: translateX(26px);
+}
+
+/* Rounded sliders */
+.slider.round {
+  border-radius: 34px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}
+.redirect{
+  user-select: none;
+  text-decoration:none;
+  color: aliceblue;
+}
+
+.closeSett {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  font-size: 30px;
+  cursor: pointer;
+}
+
+.closeSett:hover{
+  color: rgb(200, 188, 188);
+}
+
+@media screen and (max-width: 768px) {
+  img {
+    width: 100px;
+    height: 100px;
+  }
+  .card {
+    margin: 5%;
+    padding: 5%;
+    display: inline-block;
+    border-radius: 18px;
+    width: 100px;
+    height: 100px;
+  }
+
+  #navbar{
+    position: relative;
+    font-family: "Montserrat" , sans-serif;
+    background-color: rgb(0, 0, 0);
+    -webkit-border-radius: 25px;
+    border-radius: 25px;
+    color: rgb(255, 255, 255);
+    margin-left: 5%;
+    
+  }
+  #lock .iconLock, #setting .iconSetting{
+    position: relative;
+    right: 8em;
+    margin-left: 10px;
+    margin-bottom: 10px;
+    font-size: 20px;
+    cursor: pointer;
+  }
+  
+  #lock .iconLock:hover, #setting .iconSetting:hover{
+    color: rgb(10, 10, 131);
+  }
+  
+  .switch {
+    margin-bottom: 5%;
+  }
+}

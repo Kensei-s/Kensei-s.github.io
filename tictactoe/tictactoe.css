@@ -1,0 +1,167 @@
+@import url("https://fonts.googleapis.com/css?family=Montserrat");
+html {
+    height: 100%;
+    /* -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover; */
+    /* background-size: cover; */
+    background-repeat: no-repeat;
+    background: -webkit-linear-gradient(to right, #1a1a1a 0%, #999999 100%);
+    background: -moz-linear-gradient(to right, #1a1a1a 0%, #999999 100%);
+    background: -ms-linear-gradient(to right, #1a1a1a 0%, #999999 100%);
+    background: -o-linear-gradient(to right, #1a1a1a 0%, #999999 100%);
+    background: linear-gradient(to right, #1a1a1a 0%, #999999 100%);
+}
+table {
+    border-collapse: collapse;
+    margin: 20px auto;
+}
+.name{
+    position: absolute;
+    top: 5%;
+    left: 10%;
+    font-size: 30px;
+    font-family: Montserrat;
+    color: #fff;
+    margin: 20px auto;
+}
+.grid{
+    position: absolute;
+    top: 10%;
+    left: 5%;
+}
+td{
+    width: 100px;
+    height: 100px;
+    border: 1px solid rgb(255, 255, 255);
+    text-align: center;
+    font-size: 60px;
+    cursor: pointer;
+}
+tr{
+  color:#fff;
+  font-family: "Montserrat";
+}
+#last-five-winners {
+    position: absolute;
+    top: 10%;
+    right: 13%;
+    margin: 20px auto;
+    width: 200px;
+    border: 1px solid #fff;
+    padding: 10px;
+    list-style: none;
+    text-align: center;
+    font-size: 18px;
+}
+#reset-button {
+    display: block;
+    margin: 20px auto;
+    padding: 10px;
+    white-space: nowrap;
+    text-decoration: none;
+    background: var(--color-bg-dark);
+    padding: 0.5rem 1rem;
+    border-radius: var(--radius-md);
+    font-size: 1em;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    color: #fff;
+    cursor: pointer;
+    text-decoration: none;
+    line-height: 1.2;
+    transition: 0.2s;
+    will-change: transform;
+  }
+  .btnHome:focus-visible {
+    outline: none;
+    box-shadow: 0 0 0 2px var(--color-bg), 0 0 0 4px hsla(var(--color-contrast-higher-h), var(--color-contrast-higher-s), var(--color-contrast-higher-l), 0.15);
+  }
+  .btnHome:active {
+    transform: translateY(2px);
+  }
+.lfw{
+    position: absolute;
+    top: 5%;
+    right: 15%;
+    font-size: 20px;
+    font-family: "Montserrat";
+    color: #fff;
+    margin: 20px auto;
+}
+li{
+  color:#fff;
+  font-family: "Montserrat";
+}
+.btnHome {
+    position: absolute;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    white-space: nowrap;
+    text-decoration: none;
+    background: var(--color-bg-dark);
+    padding: 0.5rem 1rem;
+    border-radius: var(--radius-md);
+    font-size: 1em;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    color: var(--color-contrast-higher);
+    cursor: pointer;
+    text-decoration: none;
+    line-height: 1.2;
+    transition: 0.2s;
+    will-change: transform;
+  }
+  .btnHome:focus-visible {
+    outline: none;
+    box-shadow: 0 0 0 2px var(--color-bg), 0 0 0 4px hsla(var(--color-contrast-higher-h), var(--color-contrast-higher-s), var(--color-contrast-higher-l), 0.15);
+  }
+  .btnHome:active {
+    transform: translateY(2px);
+  }
+  .redirect{
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    user-select: none;
+    color:#fff;
+  }
+  @media screen and (max-width: 768px) {
+    .name {
+      position: absolute;
+      top: 10%;
+      left: 35%;
+      font-size: 24px;
+  }
+  .lfw {
+      font-size: 16px;
+      position: absolute;
+      top: 70%;
+      left: 30%;
+  }
+  #last-five-winners {
+    position: absolute;
+    top: 75%;
+    right: 22%;
+  }
+  .grid{
+    position: absolute;
+    top: 15%;
+    left: 17%;
+  }
+  td{
+    width: 80px;
+    height: 80px;
+    border: 1px solid rgb(255, 255, 255);
+    text-align: center;
+    font-size: 40px;
+    cursor: pointer;
+}
+#reset-button {
+  position: absolute;
+  top: 60%;
+  left:30%;
+} 
+
+}

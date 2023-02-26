@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="clock.css">
+    <link href="https://fonts.googleapis.com/css?family=Nunito+Sans|Orbitron:700&display=swap" rel="stylesheet">
+    <title>ProntoClock</title>
+</head>
+<body>
+    <div class="horloge">
+        <div class="heures"></div>
+        <div class="date"></div>
+        <br>
+        <!-- <div>
+            <label for="minutes">Minutes :</label>
+            <input type="number" id="minutes" min="0" value="1">
+            <label for="seconds">Secondes :</label>
+            <input type="number" id="seconds" min="0" max="59" value="0">
+        </div> -->
+        <div class="minuteur">Minuteur</div>
+        <div class="input-group">
+            <label for="minutes"></label>
+            <div class="input-wrapper">
+              <input type="number" id="minutes" min="0" value="1">
+              <span class="input-label">Min</span>
+            </div>
+            <label for="seconds"></label>
+            <div class="input-wrapper">
+              <input type="number" id="seconds" min="0" max="59" value="0">
+              <span class="input-label">Sec</span>
+            </div>
+          </div>
+          
+
+        <br>
+        <div class="divBtn">
+            <button class ="btn" id="start">Démarrer</button>
+            <button class ="btn" id="stop" disabled>Arrêter</button>
+            <button class ="btn" id="resume" disabled>Reprendre</button>
+            <button class ="btn" id="reset" disabled>Réinitialiser</button>
+        </div>
+        <br>
+        <div>
+            <h2 id="timer">00:00</h2>
+        </div>
+        <br>
+        <div class="chronometre">Chronomètre</div>
+        <div>
+            <h2 id="chrono">00:00:00</h2>
+        </div>
+        <div class="divBtn2">
+            <button class ="btn" id="startBtn">Démarrer</button>
+            <button class ="btn" id="pauseBtn">Pause</button>
+            <button class ="btn" id="resetBtn">Réinitialiser</button>
+          </div>
+          <a class="redirect" href="../index.html"><button class="btnHome">Home</button></a>         
+        
+    <script src="clock.js"></script>
+</body>
+</html>

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="calculator.css" />
+    <title>Calculatrice</title>
+  </head>
+  <body>
+
+    <h3>Calculator</h3>
+
+<div id="calculator" class="calculator">
+
+  <div id="viewer" class="viewer">0</div>
+
+    <button class="num" data-num="7">7</button>
+    <button class="num" data-num="8">8</button>
+    <button class="num" data-num="9">9</button>
+    <button data-ops="plus" data-oper="+" class="ops">+</button>
+
+    <button class="num" data-num="4">4</button>
+    <button class="num" data-num="5">5</button>
+    <button class="num" data-num="6">6</button>
+    <button data-ops="minus" data-oper="-" class="ops">-</button>
+
+    <button class="num" data-num="1">1</button>
+    <button class="num" data-num="2">2</button>
+    <button class="num" data-num="3">3</button>
+    <button data-ops="times" data-oper="*" class="ops">*</button>
+
+    <button class="num" data-num="0">0</button>
+    <button class="num" data-num=".">.</button>
+    <button id="equals" class="equals" data-result="">=</button>
+    <button data-ops="divided by" data-oper="/" class="ops">/</button>
+
+    <button id="del" class="del">C</button>
+    <button id="clear" class="clear">AC</button>
+  </div>
+  <a class="redirect" href="../index.html"><button class="btnHome">Home</button></a>
+</body>
+  <script src="calculator.js"></script>
+</html>
